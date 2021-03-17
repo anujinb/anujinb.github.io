@@ -20,7 +20,7 @@ import restaurant from './restaurant.png';
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 360,
   },
   slide: {
     color: '#e91e63',
@@ -28,7 +28,6 @@ const useStyles = makeStyles({
 
   mainContainer: {
     background: ' #fff',
-    height: '100%',
   },
   cardContainer: {
     maxWidth: 385,
@@ -37,7 +36,7 @@ const useStyles = makeStyles({
   },
   heading: {
     color: 'black',
-    padding: '4rem 0',
+    padding: '3rem 0',
     textTransform: 'uppercase',
   },
   projects: {
@@ -54,20 +53,18 @@ const Portfolio = () => {
 
   return (
     <Box component="div" className={classes.mainContainer}>
-      <Navbar />
-
       <Typography variant="h4" align="center" className={classes.heading}>
         Projects
       </Typography>
       <Grid container justify="center">
         {/* Project 1 */}
-        <Grid item xs={12} sm={8} md={5} lg={4}>
+        <Grid item xs={12} sm={8} md={5} lg={5}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project 1"
-                height="220"
+                height="250"
                 image={travel}
               />
               <CardContent>
@@ -101,13 +98,13 @@ const Portfolio = () => {
           </Card>
         </Grid>
         {/* Project 2 */}
-        <Grid item xs={12} sm={8} md={5} lg={4}>
+        <Grid item xs={12} sm={8} md={5} lg={5}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project 1"
-                height="220"
+                height="250"
                 image={restaurant}
               />
             </CardActionArea>

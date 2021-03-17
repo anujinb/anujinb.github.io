@@ -70,8 +70,9 @@ const useStyles = makeStyles((theme) => ({
   timeLineYear: {
     textAlign: 'center',
     maxWidth: '9.375rem',
+
     margin: '0 3rem 0 auto',
-    fontSize: '1.8rem',
+    fontSize: '1.6rem',
     background: 'tomato',
     color: 'white',
     lineHeight: 1,
@@ -92,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: 'tomato',
+    color: '#fff',
     padding: '1.5rem 0',
     textTransform: 'uppercase',
   },
@@ -107,7 +108,6 @@ const Resume = () => {
   const classes = useStyles();
   return (
     <>
-      <Navbar />
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
           Resume

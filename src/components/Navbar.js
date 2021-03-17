@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
+import { AppBar } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(3),
   },
   header2: {
-    color: 'tomato',
+    color: '#f44336',
     fontFamily: 'Poppins',
     fontWeight: 'bold',
     fontSize: 28,
@@ -32,6 +33,15 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Ubuntu',
     fontWeight: 'bold',
     fontSize: 16,
+    textDecoration: 'none',
+    color: 'white',
+  },
+  buttonLink: {
+    textDecoration: 'none',
+    '&:hover': {
+      background: 'pink',
+      color: 'tomato',
+    },
   },
   title: {
     flexGrow: 1,
@@ -55,20 +65,6 @@ export default function Navbar() {
           <Typography variant="h5" className={classes.header2}>
             lio
           </Typography>
-          <div className={classes.nav}>
-            <Button color="inherit" className={classes.nav}>
-              HOME
-            </Button>
-            <Button color="inherit" className={classes.nav}>
-              ABOUT
-            </Button>
-            <Button color="inherit" className={classes.nav}>
-              SKILLS
-            </Button>
-            <Button color="inherit" className={classes.nav}>
-              CONTACT
-            </Button>
-          </div>
         </Toolbar>
       </AppBar>
     </div>

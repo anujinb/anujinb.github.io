@@ -4,6 +4,7 @@ import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import Slider from './components/Slider';
+import Navbar from './components/Navbar';
 
 export default function App() {
   return (
@@ -12,7 +13,6 @@ export default function App() {
       <Resume />
       <Slider />
       <Portfolio />
-
       <Footer />
     </div>
   );
